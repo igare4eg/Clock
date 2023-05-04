@@ -7,8 +7,8 @@ class Clock:
         self.root.title("Часы")
 
         # Создаем Label для отображения времени
-        self.time_label = tk.Label(self.root, font=('Arial', 80))
-        self.time_label.pack(pady=20)
+        self.time_label = tk.Label(self.root, bg='black', font=('Arial', 80), fg='white')
+        self.time_label.pack()
 
         # Запускаем таймер обновления времени
         self.update_time()
